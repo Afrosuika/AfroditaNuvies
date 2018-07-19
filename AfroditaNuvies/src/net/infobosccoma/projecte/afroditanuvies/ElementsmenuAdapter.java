@@ -32,8 +32,6 @@ public class ElementsmenuAdapter extends ArrayAdapter<String> {
 				.findViewById(R.id.elementMenuImatge);
 		textView.setText(values[position]);
 		imageView.setImageResource(context.getResources().getIdentifier(values2[position], "drawable", context.getPackageName()));
-
 		return rowView;
 	}
-
 }

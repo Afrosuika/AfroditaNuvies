@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentDeTots"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Vestit" >
+
+    <!-- IMATGES DEL VESTIT -->
+
+    <ImageView
+        android:id="@+id/imatgeVestit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:contentDescription="@string/app_name" />
+
+    <!-- BARRA INFERIOR -->
+
+    <LinearLayout
+        android:id="@+id/layoutInferior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+
+        <!-- BOTÓ PER A MÉS INFORMACIÓ -->
+
+        <Button
+            android:id="@+id/btnMesInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background"
+            android:text="@string/btnMesInfo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:orientation="vertical" 
+            android:id="@+id/layoutMesInfo">
+
+            <TextView
+                android:id="@+id/titolDescripcioVestit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:text="@string/lblDescripcioVestit"
+                android:textAppearance="@android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/descripcioVestit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" >
+
+            <!-- TAULA DE LES MIDES -->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip" >
+
+                    <Button
+                        android:background="@drawable/button_background"
+                        android:text="36" />
+
+
+                    <Button
+                        android:background="@drawable/button_background"
+                        android:text="38" />
+
+
+                    <Button
+                        android:background="@drawable/button_background"
+                        android:text="40" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

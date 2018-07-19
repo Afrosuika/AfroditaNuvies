@@ -8,6 +8,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -22,6 +24,69 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="net.infobosccoma.projecte.afroditanuvies.LlistarTemporades"
+            android:label="@string/title_activity_llistar_temporades" >
+        </activity>
+        <activity
+            android:name="net.infobosccoma.projecte.afroditanuvies.LlistaColeccionsActivity"
+            android:label="@string/title_activity_llista_coleccions" >
+        </activity>
+        <activity
+            android:name="net.infobosccoma.projecte.afroditanuvies.MostrarColeccioActivity"
+            android:label="@string/title_activity_mostrar_coleccio" >
+        </activity>
+        <activity
+            android:name="net.infobosccoma.projecte.afroditanuvies.MostrarTeixitActivity"
+            android:label="@string/title_activity_mostrar_teixit" >
+        </activity>
+        <activity
+            android:name="net.infobosccoma.projecte.afroditanuvies.LlistaTeixits"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name="net.infobosccoma.projecte.afroditanuvies.Mostrarinfopersonal"
+            android:label="@string/title_activity_mostrarinfopersonal" >
+        </activity>
+        <activity
+            android:name="net.infobosccoma.projecte.afroditanuvies.galeria.PaginadorVestits"
+            android:label="@string/title_activity_paginador_vestits"
+            android:parentActivityName="net.infobosccoma.projecte.afroditanuvies.GaleriaDeVestits" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.infobosccoma.projecte.afroditanuvies.GaleriaDeVestits" />
+        </activity>
+        <activity
+            android:name="net.infobosccoma.projecte.afroditanuvies.GaleriaDeVestits"
+            android:label="@string/title_activity_galeria_de_vestits" >
+        </activity>
+        <activity android:name="net.infobosccoma.projecte.afroditanuvies.PaginadorVestitsActivity" >
+        </activity>
+        <activity
+            android:name="net.infobosccoma.projecte.afroditanuvies.PrendreMidesActivity"
+            android:label="@string/title_activity_prendre_mides" >
+        </activity>
+        <activity
+        	android:name="net.infobosccoma.projecte.afroditanuvies.mides.CinturaActivity"
+        	android:label="@string/title_activity_cintura" >
+    	</activity>
+    	<activity
+        	android:name="net.infobosccoma.projecte.afroditanuvies.mides.MalucActivity"
+        	android:label="@string/title_activity_maluc" >
+    	</activity>
+    	<activity
+        	android:name="net.infobosccoma.projecte.afroditanuvies.mides.AlturaActivity"
+        	android:label="@string/title_activity_altura" >
+    	</activity>
+    	<activity
+        	android:name="net.infobosccoma.projecte.afroditanuvies.mides.PitActivity"
+        	android:label="@string/title_activity_pit" >
+    	</activity>
+    	<activity
+        	android:name="net.infobosccoma.projecte.afroditanuvies.mides.ResumMidesActivity"
+        	android:label="@string/title_activity_resum_mides" >
+    	</activity>
+        
     </application>
 
 </manifest>

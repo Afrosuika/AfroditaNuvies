@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/anterior"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="PREV"/>
+    
+    <item
+        android:id="@+id/seguent"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="NEXT"/>
+
+</menu>
